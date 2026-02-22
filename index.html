@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AfroFusion AI Filmmaker | Remote Creative Tech</title>
   <meta name="description" content="Remote AI-powered filmmaker & creative tech specialist. Generating cinematic shorts, VFX, edits & more with tools like Runway, Higgsfield & Midjourney."/>
-  
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -25,7 +25,7 @@
     }
   </script>
 
-  <!-- Google Fonts: Modern tech feel -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
 
   <style>
@@ -40,9 +40,10 @@
     }
   </style>
 </head>
+
 <body class="bg-dark-bg text-gray-200 min-h-screen flex flex-col">
 
-  <!-- Header / Nav -->
+  <!-- Header -->
   <header class="fixed top-0 left-0 right-0 z-50 bg-dark-bg/80 backdrop-blur-md border-b border-neon-green/30">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
       <a href="#" class="text-2xl font-bold neon-glow text-neon-green">AfroFusion AI</a>
@@ -93,7 +94,6 @@
           </p>
         </div>
         <div class="neon-border rounded-xl overflow-hidden">
-          <!-- Replace with your photo or AI-generated avatar -->
           <img src="https://via.placeholder.com/600x600/111118/39ff14?text=Your+Avatar" alt="Profile" class="w-full h-auto"/>
         </div>
       </div>
@@ -121,21 +121,20 @@
     </div>
   </section>
 
-  <!-- Portfolio / Reel -->
+  <!-- Portfolio -->
   <section id="portfolio" class="py-20 px-6 bg-dark-card/50">
     <div class="container mx-auto max-w-5xl text-center">
       <h2 class="text-4xl font-bold neon-glow mb-10">AI-Powered Reel</h2>
       <div class="aspect-video max-w-4xl mx-auto neon-border rounded-xl overflow-hidden">
-        <!-- Replace src with your actual YouTube embed, Vimeo, or self-hosted video -->
         <iframe 
-  width="100%" height="100%"
-  src="https://www.youtube.com/embed/9o8OVbhqxhw"
-  title="Demo Reel"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
-</div>
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/9o8OVbhqxhw"
+          title="Demo Reel"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
       <p class="mt-6 text-lg">Short AI experiments & generative storytelling clips. More coming soon!</p>
     </div>
   </section>
@@ -145,15 +144,18 @@
     <div class="container mx-auto max-w-3xl text-center">
       <h2 class="text-4xl font-bold neon-glow mb-10">Let's Create Together</h2>
       <p class="text-xl mb-8">Remote freelance AI filmmaking services • Open to collabs, gigs & conversations</p>
-      <a href="<form action="https://formspree.io/f/mreebqqj" method="POST">
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email Address" required>
-        <textarea name="message" placeholder="Inquiry or Technical Update"></textarea>
-        <button class="mod-btn" style="background:var(--teal);color:white;">Submit to Lab</button>
-    </form>" 
-         class="inline-block bg-neon-purple text-white font-bold py-5 px-12 rounded-full text-xl hover:bg-neon-green hover:text-black transition neon-border">
-        Email Me Now
-      </a>
+
+      <!-- Corrected Form -->
+      <form action="https://formspree.io/f/mreebqqj" method="POST" class="space-y-4 max-w-xl mx-auto">
+        <input type="text" name="name" placeholder="Full Name" required class="w-full p-3 rounded bg-dark-card border border-neon-green/40">
+        <input type="email" name="email" placeholder="Email Address" required class="w-full p-3 rounded bg-dark-card border border-neon-green/40">
+        <textarea name="message" placeholder="Inquiry or Technical Update" class="w-full p-3 rounded bg-dark-card border border-neon-green/40"></textarea>
+        
+        <button class="bg-neon-purple text-white font-bold py-4 px-10 rounded-full hover:bg-neon-green hover:text-black transition neon-border">
+          Submit to Lab
+        </button>
+      </form>
+
       <div class="mt-12 flex justify-center gap-8 text-3xl">
         <a href="https://gov.texas.gov/film/page/incentives_overview" target="_blank" class="hover:text-neon-green transition">Incentives</a>
         <a href="https://www.lonestarfilmfestival.com/submit" target="_blank" class="hover:text-neon-green transition">Film Society</a>
@@ -164,15 +166,14 @@
 
   <!-- Footer -->
   <footer class="py-8 text-center text-gray-500 border-t border-neon-green/20">
-    <p>Powered by GitHub • © 2026 AfroFusion AI • Human Insight  AI & Creativity</p>
+    <p>Powered by GitHub • © 2026 AfroFusion AI • Human Insight × AI & Creativity</p>
   </footer>
 
-  <!-- Dark/Light Toggle Script -->
+  <!-- Dark/Light Toggle -->
   <script>
     const toggle = document.getElementById('theme-toggle');
     const html = document.documentElement;
 
-    // Check for saved preference or system preference
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       html.classList.add('dark');
       toggle.textContent = '☀️';
@@ -196,7 +197,3 @@
 
 </body>
 </html>
-
-
-
-
