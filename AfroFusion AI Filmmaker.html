@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AfroFusion AI Filmmaker | Remote Creative Tech</title>
+  <meta name="description" content="Remote AI-powered filmmaker & creative tech specialist. Generating cinematic shorts, VFX, edits & more with tools like Runway, Higgsfield & Midjourney."/>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'neon-green': '#39ff14',
+            'neon-purple': '#c300ff',
+            'neon-blue': '#00f0ff',
+            'dark-bg': '#0a0a0f',
+            'dark-card': '#111118',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Modern tech feel -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: 'Orbitron', sans-serif; }
+    .neon-glow {
+      text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #00f0ff;
+    }
+    .neon-border {
+      border: 1px solid #39ff14;
+      box-shadow: 0 0 15px rgba(57, 255, 20, 0.5);
+    }
+  </style>
+</head>
+<body class="bg-dark-bg text-gray-200 min-h-screen flex flex-col">
+
+  <!-- Header / Nav -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-dark-bg/80 backdrop-blur-md border-b border-neon-green/30">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold neon-glow text-neon-green">AfroFusion AI</a>
+      <div class="space-x-6">
+        <a href="#about" class="hover:text-neon-green transition">About</a>
+        <a href="#services" class="hover:text-neon-green transition">Services</a>
+        <a href="#portfolio" class="hover:text-neon-green transition">Reel</a>
+        <a href="#contact" class="hover:text-neon-green transition">Connect</a>
+        <button id="theme-toggle" class="text-xl">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="flex-1 flex items-center justify-center min-h-screen pt-20 pb-16 px-6">
+    <div class="text-center max-w-4xl">
+      <h1 class="text-5xl md:text-7xl font-bold neon-glow mb-6 leading-tight">
+        Remote AI Filmmaker<br/>
+        <span class="text-neon-purple">Creative Tech Innovator</span>
+      </h1>
+      <p class="text-xl md:text-2xl mb-10 text-gray-300">
+        Building cinematic stories with AI — from script to screen.<br/>
+        Runway • Higgsfield • Midjourney • Sora • ElevenLabs
+      </p>
+      <div class="flex flex-col sm:flex-row gap-6 justify-center">
+        <a href="#contact" class="bg-neon-green text-black font-bold py-4 px-10 rounded-full hover:bg-neon-purple hover:text-white transition neon-border">
+          Hire for Your Project
+        </a>
+        <a href="#portfolio" class="border-2 border-neon-blue text-neon-blue font-bold py-4 px-10 rounded-full hover:bg-neon-blue hover:text-black transition">
+          Watch AI Reel
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-6 bg-dark-card/50">
+    <div class="container mx-auto max-w-5xl">
+      <h2 class="text-4xl font-bold neon-glow mb-10 text-center">Who I Am</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-lg leading-relaxed mb-6">
+            African American creative based in Texas, passionate about storytelling through film and emerging tech. 
+            Inspired by legends like Billy Bob Thornton & Sam Elliott in projects like <em>Landman</em>, I'm building my path remotely using AI to democratize filmmaking.
+          </p>
+          <p class="text-lg leading-relaxed">
+            From background acting aspirations to full AI-powered shorts — I create content that reflects diverse voices, experiments with generative tools, and offers freelance services to creators worldwide.
+          </p>
+        </div>
+        <div class="neon-border rounded-xl overflow-hidden">
+          <!-- Replace with your photo or AI-generated avatar -->
+          <img src="https://via.placeholder.com/600x600/111118/39ff14?text=Your+Avatar" alt="Profile" class="w-full h-auto"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 px-6">
+    <div class="container mx-auto max-w-5xl">
+      <h2 class="text-4xl font-bold neon-glow mb-12 text-center">Remote Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-dark-card p-8 rounded-xl neon-border hover:scale-105 transition">
+          <h3 class="text-2xl font-bold mb-4 text-neon-blue">AI Video Generation</h3>
+          <p>Text-to-video shorts, cinematic scenes & experimental films using Runway, Higgsfield, Sora & more.</p>
+        </div>
+        <div class="bg-dark-card p-8 rounded-xl neon-border hover:scale-105 transition">
+          <h3 class="text-2xl font-bold mb-4 text-neon-green">Editing & VFX Enhancement</h3>
+          <p>AI-assisted cuts, effects, color grading & polishing for your footage — fast & remote.</p>
+        </div>
+        <div class="bg-dark-card p-8 rounded-xl neon-border hover:scale-105 transition">
+          <h3 class="text-2xl font-bold mb-4 text-neon-purple">Script & Music Support</h3>
+          <p>AI-generated scripts, dialogue, custom scores (Suno/AIVA) & marketing assets tailored to your vision.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio / Reel -->
+  <section id="portfolio" class="py-20 px-6 bg-dark-card/50">
+    <div class="container mx-auto max-w-5xl text-center">
+      <h2 class="text-4xl font-bold neon-glow mb-10">AI-Powered Reel</h2>
+      <div class="aspect-video max-w-4xl mx-auto neon-border rounded-xl overflow-hidden">
+        <!-- Replace src with your actual YouTube embed, Vimeo, or self-hosted video -->
+        <iframe 
+          width="100%" height="100%" 
+          src="https://youtube.com/shorts/9o8OVbhqxhw?si=ALoWZccyc87aLnXP" 
+          title="Demo Reel" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="mt-6 text-lg">Short AI experiments & generative storytelling clips. More coming soon!</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6">
+    <div class="container mx-auto max-w-3xl text-center">
+      <h2 class="text-4xl font-bold neon-glow mb-10">Let's Create Together</h2>
+      <p class="text-xl mb-8">Remote freelance AI filmmaking services • Open to collabs, gigs & conversations</p>
+      <a href="mailto:your.email@example.com?subject=AI%20Filmmaking%20Project" 
+         class="inline-block bg-neon-purple text-white font-bold py-5 px-12 rounded-full text-xl hover:bg-neon-green hover:text-black transition neon-border">
+        Email Me Now
+      </a>
+      <div class="mt-12 flex justify-center gap-8 text-3xl">
+        <a href="https://gov.texas.gov/film/page/incentives_overview" target="_blank" class="hover:text-neon-green transition">Incentives</a>
+        <a href="https://www.lonestarfilmfestival.com/submit" target="_blank" class="hover:text-neon-green transition">Film Society</a>
+        <a href="https://gildedspacevault.gumroad.com/l/xydat" target="_blank" class="hover:text-neon-green transition">Seed Fund</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center text-gray-500 border-t border-neon-green/20">
+    <p>Built with loyalty to GitHub • © 2026 AfroFusion AI • Powered by AI & Creativity</p>
+  </footer>
+
+  <!-- Dark/Light Toggle Script -->
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+
+    // Check for saved preference or system preference
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      html.classList.add('dark');
+      toggle.textContent = '☀️';
+    } else {
+      html.classList.remove('dark');
+      toggle.textContent = '🌙';
+    }
+
+    toggle.addEventListener('click', () => {
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        localStorage.theme = 'light';
+        toggle.textContent = '🌙';
+      } else {
+        html.classList.add('dark');
+        localStorage.theme = 'dark';
+        toggle.textContent = '☀️';
+      }
+    });
+  </script>
+
+</body>
+</html>
